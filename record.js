@@ -209,7 +209,7 @@ function getMicrophoneAccess() {
     }
     var inputBuffer = [];
     var outputBuffer = [];
-    var bufferSize = 16384 / 4;
+    var bufferSize = 16384;
     var sampleRate = audioContext.sampleRate;
     var processingNode = audioContext.createScriptProcessor(bufferSize, 1, 1);
     var noiseNode = audioContext.createScriptProcessor(bufferSize, 1, 1);
